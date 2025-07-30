@@ -1,84 +1,84 @@
-/* Reset and Base Styles */
-* {
+*{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font-family:sans-serif;
 }
-
-body {
-  font-family: Arial, sans-serif;
+body{
+  margin: 0;
+  padding: 0;
   line-height: 1.6;
-  background: #f0f0f0;
-  color: #333;
-  padding-top: 80px; /* space for fixed header */
 }
-
-/* Fixed Header */
-header {
+header{
+  background-color: black;
+  color: white;
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
-  background: #333;
-  color: #fff;
-  padding: 1rem 0;
-  z-index: 1000;
+  top: 0;
+  z-index:1000;
+  border-radius: 5px;
+  scroll-behavior: smooth;
 }
-
-/* Navigation */
-nav {
+nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
-  margin: auto;
+  height: 80px;
 }
-
-nav h1 {
-  font-size: 1.5rem;
-  color: #fff;
+nav h1{
+   padding: 10px;
+   font-size: 24px;
 }
-
-nav ul {
-  list-style: none;
+nav ul{
   display: flex;
-  gap: 1.5rem;
+  list-style: none;
+  gap: 10px;
+  padding: 10px;
 }
-
-nav a {
-  color: white;
+nav a{
   text-decoration: none;
-  font-weight: bold;
+  color: white;
+  font-size: 16px;
 }
-
-/* Sections */
-section {
-  scroll-margin-top: 80px; /* prevent header overlap */
-  padding: 4rem 2rem;
-  max-width: 800px;
-  margin: auto;
+#home{
+  margin-top: 85px;
+  background-image: url(/images/office-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  scroll-margin-top: 90px;
 }
-
-#home {
+section{
+  margin:20px 80px; 
+  scroll-margin-top: 90px;
+}
+img{
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+}
+#classify{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+h2{
+  padding: 20px 0; 
+}
+.project-card{
+  background-color: aliceblue;
+  border-left: 10px solid black;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+#contact{
+  margin-bottom: 20px;
+}
+footer{
+  background-color: black;
+  color: white;
   text-align: center;
-  background: #e0e0e0;
-  padding: 5rem 2rem;
-}
-
-/* Project Cards */
-.project-card {
-  background: white;
-  padding: 1rem;
-  margin: 1rem 0;
-  border-left: 4px solid #333;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #222;
-  color: #fff;
-  margin-top: 2rem;
+  padding: 30px;
 }
